@@ -58,3 +58,12 @@ export const updatePost = (id, post) => async (dispatch) => {
     console.log(error.message);
   }
 };
+
+export const sendPosts = (post) => async (dispatch) => {
+  console.log(post);
+  try {
+    await api.sendPost(post);
+  } catch (error) {
+    console.log(error.message);
+  }
+};
