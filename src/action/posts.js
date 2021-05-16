@@ -7,7 +7,6 @@ import {
 } from "../constants/actionTypes";
 
 import * as api from "../api";
-import Mongoose from "mongoose";
 
 export const getPosts = () => async (dispatch) => {
   try {
